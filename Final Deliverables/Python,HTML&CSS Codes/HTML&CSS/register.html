@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='register.css')}}">
+</head>
+<body>
+    <div class="head">
+        <br><h1 class="name">Vehicle Damage Detection</h1>
+        <nav>
+            <ul>
+                <a href="http://127.0.0.1:5000/index" >Home</a>
+                <a href="http://127.0.0.1:5000/login" >Login</a>
+                <a href="http://127.0.0.1:5000/register" >Register</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="details">
+        <h3>Register</h3>
+        <form action="/afterreg" method="POST" autocomplete="off">
+            <div class="input">
+                <br>
+                <input type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="input">
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email-id" required>
+            </div>
+            <div class="input">
+                <br>
+                <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required><br>
+            </div>
+            <br>
+            <div class="btn">
+                <button type="submit">Register</button>
+            </div>
+            <h6>Already have account? <a href="http://127.0.0.1:5000/login" >Login</a></h6>
+        </form>
+    </div>
+    <div>
+            <h5 class="rights" >Copyrights<sup>©</sup> 2021,All Rights Reserved</h5>
+    </div>
+</body>
+</html>
